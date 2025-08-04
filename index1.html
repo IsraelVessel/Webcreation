@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEEK 2 - ENHANCED HTML</title>
+</head>
+<body>
+   
+    <h1>Ordered List</h1>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>      
+        <li>JavaScript</li>
+    </ol>
+
+ 
+    <h2>Unordered Lists</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h2>Definition List</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JavaScript</dt>
+        <dd>A programming language for the web</dd>
+    </dl>
+
+    <h2>Nested List</h2>
+    <ul>
+        <li>HTML
+            <ul>
+                <li>Elements</li>
+                <li>Attributes</li>
+            </ul>
+        </li>
+        <li>CSS
+            <ul>
+                <li>Selectors</li>
+                <li>Properties</li>
+            </ul>
+        </li>
+        <li>JavaScript
+            <ul>
+                <li>Variables</li>
+                <li>Functions</li>
+            </ul>
+        </li>
+    </ul>
+
+   
+    <h2>Embedded Image</h2>
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" 
+         alt="W3Schools.com" 
+         width="104" 
+         height="142">
+
+   
+    <h2>Embedded Audio</h2>
+    <audio controls>    
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Embedded Video</h2>
+    <video width="320" height="240" controls>  
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+  
+    <h2>Hyperlink</h2>
+    <p>Visit <a href="https://www.w3schools.com">W3Schools</a> for more information.</p>
+
+    
+    <h2>Table</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Language</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>HyperText Markup Language</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Cascading Style Sheets</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>A programming language for the web</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>User Profile Form</h2>
+    <form action="/submit_form" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+        
+        <label for="bio">Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="cv">Upload CV:</label><br>
+        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    
+    <h2>Comments</h2>
+    <form action="/submit_comment" method="post">  
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br>
+        <input type="submit" value="Submit Comment">
+    </form>
+</body>
+</html>
